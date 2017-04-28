@@ -94,9 +94,102 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+/*
+********** ESTILOS GENERALES DE LA PAGINA
+Selectores CSS Clase: .nombre clase html tag: tag id: #nombre id
+*/
+*{
+    color:black;
+    font-size: 16px;
+}
+h1,h2{
+    color: #b3d4fc;
+}
+h1{
+    text-align: center;
+    font-size: 120%;
+    font-weight: bold;
+}
+p{
+    text-align: justify;
 
+}
 
+table{
+    width:100%;
+    border-width:5px;
+    border-style: groove;
+    border-color:bisque;
+}
 
+table th, table tr, table td{
+    border-width:1px;
+    border-style: solid;
+    border-color: black;
+}
+
+table tfoot tr{
+    border-width:3px ;
+    border-style: solid;
+    border-color: black;
+}
+
+table tfoot td{
+    border: none;
+}
+
+.lft{
+    float: left;
+}
+/* MAQUETAR TABLA SERIES */
+a{
+    color:black;
+    text-decoration: none;
+}
+
+nav ul li{
+    float:left; /** flotan */
+    width:150px; /* ancho para cada uno */
+    text-align: center; /* Texto centrado */
+    list-style: none; /* le quitamis el disc de la lista */
+    background-color: #cccccc;
+    border-style: solid;
+    border-width:1px;
+    border-color: white;
+    text-decoration:none;
+    border:1px  solid white; /* lo mismo que lo de arriba en una sola sentencia */
+    transition: background-color 3s;
+
+}
+/* selector cuando se activa cuando se pasa con el raton */
+nav ul li:hover{
+   background-color: #555555;
+}
+
+article{
+    float: left;
+    width: 33%;
+    border-style: solid;
+    border-color: #b3d4fc;
+    border-width: thin;
+}
+
+.bloque{
+    float: left;
+    width:50%;
+    height:100px;
+    background-color:red;
+
+}
+
+button{
+    height: 25px;
+    margin-top: calc(100px - 25px - 25px);
+}
+
+.texto{
+    height:25px;
+}
 
 
 
