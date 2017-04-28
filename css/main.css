@@ -147,6 +147,21 @@ a{
     text-decoration: none;
 }
 
+/* MAQUETACION DE LAYOUT */
+nav{
+    position: fixed;
+    top:0px;
+    height: 40px;
+    z-index: 8000;
+    left:25%;
+
+}
+#wrapper{
+    position:relative;
+    top:40px;
+
+}
+/* MAQUETACION DE MENU */
 nav ul li{
     float:left; /** flotan */
     width:150px; /* ancho para cada uno */
@@ -159,6 +174,7 @@ nav ul li{
     text-decoration:none;
     border:1px  solid white; /* lo mismo que lo de arriba en una sola sentencia */
     transition: background-color 3s;
+    padding: 5px;
 
 }
 /* selector cuando se activa cuando se pasa con el raton */
@@ -166,27 +182,44 @@ nav ul li:hover{
    background-color: #555555;
 }
 
+/* MAQUETACION DE SECCIONES */
 article{
     float: left;
-    width: 33%;
+    box-sizing: border-box;
+    width: calc((100%)/3);
     border-style: solid;
     border-color: #b3d4fc;
     border-width: thin;
+    padding: 20px;
 }
 
-.bloque{
+#ejer1 article > .bloque{
     float: left;
     width:50%;
+    box-sizing: border-box;
     height:100px;
     background-color:red;
 
 }
 
+section:nth-child(odd)
+{
+    background-color: beige;
+}
+section:nth-child(even)
+{
+    background-color: #cccccc;
+}
+
 button{
     height: 25px;
     margin-top: calc(100px - 25px - 25px);
+    border-radius: 10px;
 }
 
+#ejer1 article > div:last-child{
+    height:25px;
+}
 .texto{
     height:25px;
 }
