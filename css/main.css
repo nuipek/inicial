@@ -122,6 +122,16 @@ table{
     border-color:bisque;
 }
 
+#tablaseries caption{
+
+    visibility:hidden;
+}
+#tablaseries caption:hover{
+    visibility:visible;
+}
+
+
+
 table th, table tr, table td{
     border-width:1px;
     border-style: solid;
@@ -148,20 +158,31 @@ a{
 }
 
 /* MAQUETACION DE LAYOUT */
-nav{
-    position: fixed;
-    top:0px;
-    height: 40px;
-    z-index: 8000;
-    left:25%;
-
-}
 #wrapper{
     position:relative;
     top:40px;
 
 }
+nav{
+    position: fixed;
+    top:0px;
+    height: 40px;
+    z-index: 8000;
+    width:100%;
+    background: #299a0b; /* Old browsers */
+    background: -moz-linear-gradient(left, #299a0b 59%, #299a0b 59%, #56ce10 83%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #299a0b 59%,#299a0b 59%,#56ce10 83%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #299a0b 59%,#299a0b 59%,#56ce10 83%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#299a0b', endColorstr='#56ce10',GradientType=1 ); /* IE6-9 */
+
+}
+
 /* MAQUETACION DE MENU */
+nav ul{
+
+    margin:0 auto;
+    width:800px;
+}
 nav ul li{
     float:left; /** flotan */
     width:150px; /* ancho para cada uno */
@@ -223,6 +244,32 @@ button{
 .texto{
     height:25px;
 }
+
+
+.flex-container{
+    display:flex;
+    flex-direction: column;
+}
+
+main section:last-child{
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+main section:last-child > div{
+    flex-wrap: wrap;
+    flex-direction: row;
+
+}
+
+main section:last-child article{
+
+    flex-direction:column;
+
+
+
+}
+
 
 
 
