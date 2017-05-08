@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <title>Vistas con FlexBox</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js"></script>
+
+</head>
+<body>
+<noscript>
+    <p>Esta pagina  necesita Javascript.</p>
+</noscript>
+
+<header>
+    <nav role="navigation">
+        <ul>
+            <li>
+                <a href="/">
+                    <div>
+                        Principal
+                        <span>Presentacion</span>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <div>
+                        Alumnos
+                        <span>Operaciones con alumnos</span>
+                    </div>
+                </a><div>
+                <ul>
+                    <li><a href="#">Listado</a></li>
+                    <li><a href="#">Alta</a></li>
+                    <li><a href="#">Informe</a></li>
+                </ul>
+            </div>
+            </li>
+            <li>
+                <a href="#">
+                    <div>
+                        Cursos
+                        <span>Operativa de los cursos</span>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <div>
+                        Profesores
+                        <span>Operativa de profesores</span>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<div id="wrapper">
+    <h1>Ejemplos de CSS3 y HTML5</h1>
+    <main class="flex-container">
+        <section id="ejercicioflex" class="flex-container">
+            <header><h2>Ejercicio 1 Flex</h2></header>
+            <div class="flex-container">
+                <article class="flex-container">
+                    <header><h3>Titulo Articulo</h3></header>
+                    <div class="flex-container">
+                        <div><img src="img/bad-profile-pic.jpeg" alt="imagen"></div>
+                        <div>Texto a a la derecha</div>
+                    </div>
+                    <div>
+                        <div class="movil_invisible">
+                            Texto a ocultar
+                        </div>
+                        <a class="laptop_invisible" href="#">Leer Mas</a>
+                    </div>
+                </article>
+                <article class="flex-container">
+                    <header><h3>Titulo Articulo</h3></header>
+                    <div class="flex-container">
+                        <div><img src="img/bad-profile-pic.jpeg" alt="imagen"></div>
+                        <div>Texto a a la derecha</div>
+                    </div>
+                    <div>
+                        <div class="movil_invisible">
+                            Texto a ocultar
+                        </div>
+                        <a class="laptop_invisible" href="#">Leer Mas</a>
+                    </div>
+                </article>
+                <article class="flex-container">
+                    <header><h3>Titulo Articulo</h3></header>
+                    <div class="flex-container">
+                        <div><img src="img/bad-profile-pic.jpeg" alt="imagen"></div>
+                        <div>Texto a a la derecha</div>
+                    </div>
+                    <div>
+                        <div class="movil_invisible">
+                            Texto a ocultar
+                        </div>
+                        <a class="laptop_invisible" href="#">Leer Mas</a>
+                    </div>
+                </article>
+                <article class="flex-container">
+                    <header><h3>Titulo Articulo</h3></header>
+                    <div class="flex-container">
+                        <div><img src="img/bad-profile-pic.jpeg" alt="imagen"></div>
+                        <div>Texto a a la derecha</div>
+                    </div>
+                    <div>
+                        <div class="movil_invisible">
+                            Texto a ocultar
+                        </div>
+                        <a class="laptop_invisible" href="#">Leer Mas</a>
+                    </div>
+                </article>
+
+                <article class="flex-container">
+                    <header><h3>Titulo Articulo</h3></header>
+                    <div class="flex-container">
+                        <div><img src="img/bad-profile-pic.jpeg" alt="imagen"></div>
+                        <div>Texto a a la derecha</div>
+                    </div>
+                    <div>
+                        <div class="movil_invisible">
+                            Texto a ocultar
+                        </div>
+                        <a class="laptop_invisible" href="#">Leer Mas</a>
+                    </div>
+                </article>
+
+                <article class="flex-container">
+                    <header><h3>Titulo Articulo</h3></header>
+                    <div class="flex-container">
+                        <div><img src="img/bad-profile-pic.jpeg" alt="imagen"></div>
+                        <div>Texto a a la derecha</div>
+                    </div>
+                    <div>
+                        <div class="movil_invisible">
+                            Texto a ocultar
+                        </div>
+                        <a class="laptop_invisible" href="#">Leer Mas</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <section id="tablaFlex">
+            <header><h2>Tabla Responsive Con Flex</h2></header>
+            <div id="datosAlumnos">
+                <div class="table-row header">
+                    <div class="colum index"><input type="checkbox" value="-1" name="codigo"> </div>
+                    <div class="wrapper name-surname-dni-date_of_birth">
+                        <div class="wrapper name-surname-dni">
+                            <div class="wrapper name-surname">
+                                <div class="colum name">Nombre</div>
+                                <div class="colum surname">Apellidos</div>
+                            </div>
+                            <div class="colum dni">DNI</div>
+                        </div>
+                        <div class="colum date_of_birth">F Nacimiento</div>
+                    </div>
+                    <div class="wrapper email-telephone">
+                        <div class="colum email">Email</div>
+                        <div class="colum telephone">Telefono</div>
+                    </div>
+
+                    <div class="wrapper address-city-zip_code">
+                        <div class="colum address">Dirección</div>
+                        <div class="colum city">Poblacion</div>
+                        <div class="colum zip_code">C.P.</div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section>
+            <header><h2>Seccion 2</h2></header>
+        </section>
+        <section>
+            <header><h2>Animacion 2</h2></header>
+            <div id="slider">
+                <figure>
+                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/austin-fireworks.jpg" alt>
+                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/taj-mahal_copy.jpg" alt>
+                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/ibiza.jpg" alt>
+                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/ankor-wat.jpg" alt>
+                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/austin-fireworks.jpg" alt>
+
+                </figure>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <!-- WAI ARIA -->
+
+
+       <div> RRSS:
+       </div>
+        <ul class="rrss">
+            <i class="fa fa-facebook-square" aria-hidden="true"></i>
+            <li><a href="https://www.linkedin.com"><img  class="linkedin" src="img/1x1.png" alt="Linkedin" title="linkedin"></a></li>
+            <li><a href="https://www.twitter.com"><img  class="twitter" src="img/1x1.png" alt="twitter" title="twitter"></a></li>
+            <li><a href="https://www.skype.com"><img  class="skype" src="img/1x1.png" alt="skype" title="skype"></a></li>
+        </ul>
+        <div>
+            Gracias por confiar en nosotros
+            <a href="https://www.cocacola.com"><img  class="cocacola" src="img/1x1.png" alt="cocacola" title="cocacola"></a>
+        </div>
+
+    </footer>
+</div>
+</body>
+</html>

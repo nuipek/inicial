@@ -2,35 +2,44 @@
 .ocultarmostrarboton{
     visibility: visible;
     display: block;
+    box-sizing: border-box;
 }
 .ocultarmostrartexto{
 visibility: hidden;
 display: none;
+    box-sizing: border-box;
 }
 *{
     margin:0px;
     padding: 0px;
+    box-sizing: border-box;
 }
-h1{text-align: center}
+h1{text-align: center;
+    box-sizing: border-box;
+    margin: 0px;
+}
 footer{
     text-align: center;
 }
 
 nav ul li{
 
-    width:150px; /* ancho para cada uno */
+    width:100%; /* ancho para cada uno */
     text-align: center; /* Texto centrado */
     list-style: none; /* le quitamis el disc de la lista */
     background-color: #299a0b;
     border-style: solid;
     border-width:1px;
+
+
     border-color: white;
+
     text-decoration:none;
-    border:1px  solid white; /* lo mismo que lo de arriba en una sola sentencia */
     transition: background-color 3s;
     padding: 5px;
     margin:0px;
     flex-grow: 1;
+    box-sizing: border-box;
 }
 
 nav ul li:hover{
@@ -48,27 +57,41 @@ nav ul li:hover{
         flex-direction: column;
     }
     .ficha{
-        border-style: solid;
+        /*border-style: solid;
         border-width:1px;
+        box-sizing: border-box;
+        */
         display: flex;
         flex-direction: column;
         align-items: center;
-  }
+    }
     .subficha{
         display: flex;
         flex-direction: column;
         align-items: center;
-        text-align: center;
+       /* text-align: center;*/
+
+    }
+    .subficha img {
+        order:2;
+    }
+    .subficha p {
+        order:1;
+        box-sizing: border-box;
     }
 
+
     nav ul{
-        width: 100%;
+        width:100%;
         display: flex;
         flex-direction: column;
+        box-sizing: border-box;
 
     }
     nav ul li{
         width:100%;
+        box-sizing: border-box;
+
     }
 
 
@@ -94,6 +117,7 @@ nav ul li:hover{
         width: 100%;
         display: flex;
         flex-direction: row;
+        box-sizing: border-box;
 
     }
 
@@ -102,21 +126,26 @@ nav ul li:hover{
         display:flex;
         flex-direction: row;
         flex-wrap: wrap;
-        widows:100%;
+        width:100%;
+        box-sizing: border-box;
+
     }
 
     .ocultarmostrarboton{
         visibility: hidden;
         display: none;
+        box-sizing: border-box;
     }
     .ocultarmostrartexto{
         visibility: visible;
         display: block;
+        box-sizing: border-box;
     }
 
     .ficha{
         border-style: solid;
         border-width:1px;
+        box-sizing: border-box;
         display: flex;
         flex-direction: column;
         flex-wrap: nowrap;
@@ -127,13 +156,16 @@ nav ul li:hover{
       display:flex;
       flex-wrap: nowrap;
         flex-direction: row;
-
-
     }
-    .subficha:first-child{
-        width: 50%;
-
+    .subficha img {
+        order:1;
+        width: 100%;
     }
+    .subficha p {
+        order:2;
+    }
+
+
 
 }
 
